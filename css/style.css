@@ -132,4 +132,33 @@ da manipulação programada com JavaScript*/
     left: 0;
     right: 0;
 }
- 
+
+
+/* Exercícios */
+
+/* 1) Crie uma regra CSS para formatar o artigo/seção de
+Destaque com as seguintes configurações::after
+
+- Altura de uns 500px
+- Imagem de fundo (fundo-destaque)
+- Imagem de fundo deve ficar parada
+- Flex com alinhamento totalmente centralizado, e um
+elemento em cima do outro (ou seja, em modo coluna */
+
+.destaque {
+    height: 500px;
+    background-image: url(../imagens/fundo-destaque.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* 2) Crie uma regra CSS para formatar o h2 e o p contidos em Destaque. Faça com que os textos fiquem centralizados e com a cor clara */
+
+.destaque p {
+    color: var(--cor-clara);
+    text-align: center;
+}
