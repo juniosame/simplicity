@@ -37,3 +37,65 @@ body {
 img {
     max-width: 100%;
 }
+
+/* Formatação de Letra */
+h1 {
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+/* Formatação do Link no H1 */
+
+h1 a {
+    color: var(--cor-clara);
+    background-color: var(--cor-escura);
+    padding: 0.3rem 1rem;
+    border-radius: 6px;
+}
+
+a { text-decoration: none; }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu { list-style: none;}
+
+/* Formatação da palavra Menu */
+
+nav h2 a {
+    color: var(--cor-escura);
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+
+/* || Hover: mouse || Focus: tab/teclado || */
+nav h2 a:hover, nav h2 a:focus, .menu a:hover, .menu a:focus {
+    background-color: var(--cor-intermediaria)  ;
+}
+
+/* Regra para formatar os links contidos na lista/menu */
+.menu a {
+    /* Mini-Exercício
+    Faça as seguintes alterações:display: 
+    - cor do texto escura
+    - negrito
+    - flex com centralização total
+    - altura de 50px */
+
+    color: var(--cor-escura);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+
+ 
