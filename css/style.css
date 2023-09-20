@@ -63,7 +63,15 @@ header {
     justify-content: space-between;
 }
 
-.menu { list-style: none;}
+/*  Regra da lista de links */
+
+.menu {
+    list-style: none;
+    /* ATENÇÃO!
+    Usamos display:none para não exibir
+    inicialmente a lista de links. */
+    display: none;
+}
 
 /* Formatação da palavra Menu */
 
@@ -98,4 +106,30 @@ nav h2 a:hover, nav h2 a:focus, .menu a:hover, .menu a:focus {
 }
 
 
+/* Seletor de classes combinada
+Esta regra somente irá funcionar quando
+AS DUAS CLASSES estiverem aplicadas JUNTAS no
+elemento HTM (no caso, na lista de menu/links).
+
+Obs.: esta combinação será possível por meio
+da manipulação programada com JavaScript*/
+.menu.aberto {
+
+    /* O Flex fará a lista de links aparecer */
+    display: flex;
+
+    /* Com os links em forma de coluna (vertical) */
+    flex-direction: column;
+
+    /*  Aplicamos um fundo à lista evitando a
+    dificuldade de leitura dos links */
+    background-color: var(--cor-clara);
+
+    /* Usamos as propriedades de posicionamento
+    e coordenadas para garantir o encaixe correto
+    (abaixo  do título e da palavra Menu) */
+    position: absolute;
+    left: 0;
+    right: 0;
+}
  
