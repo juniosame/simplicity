@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@700;800&display=swap');
 
-* {box-sizing: border-box;}
+/* Pra não ter dor de cabeça com medidas, o "*" vale pra todos elementos */
+* {
+    box-sizing: border-box;
+}
 
+/* Reset do CSS */
+body, h1, h2, p, figure, .menu {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Declaração de variáveis */
 :root {
     --cor-titulo: #4d4d4d;
     --cor-texto: #333;
@@ -10,4 +21,19 @@
     --cor-intermediaria: #ececec;
 }
 
-html { font-size: 16px; }
+/* Apontando o padrão de tamnho do HTML (raiz) */
+html {
+    font-size: 16px;
+}
+
+/*  Estilização */
+
+body {
+    color: var(--cor-texto);
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--cor-clara);
+}
+
+img {
+    max-width: 100%;
+}
