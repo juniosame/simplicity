@@ -160,9 +160,13 @@ elemento em cima do outro (ou seja, em modo coluna */
 
 /* 2) Crie uma regra CSS para formatar o h2 e o p contidos em Destaque. Faça com que os textos fiquem centralizados e com a cor clara */
 
-.destaque  {
+.destaque h2, .destaque p  {
     color: var(--cor-clara);
     text-align: center;
+    animation-name: animaDestaque;
+    animation-duration: 3s;
+    transition: all 500ms cubic-bezier(0.000, 1.000, 0.990, 0.980); /* custom */
+    transition-timing-function: cubic-bezier(0.000, 1.000, 0.990, 0.980); /* custom */
 }
 
 .destaque h2 {
@@ -170,7 +174,7 @@ elemento em cima do outro (ou seja, em modo coluna */
         tamanho minimo,
         tamanho ideal,
         tamanho máximo) */
-    font-size: clamp(3rem, 10vw, 7rem);
+    font-size: clamp(2.5rem, 10vw, 7rem);
 }
 
 .destaque p {
@@ -181,3 +185,106 @@ elemento em cima do outro (ou seja, em modo coluna */
     width: clamp(26rem, 10vw, 50rem);
     height: clamp(26rem, 10vh, 50rem);
 } */
+
+@keyframes animaDestaque {
+    from {
+        Opacity: 0;
+        transform: translateY(-500px);
+    }
+    to { opacity: 1;}
+}
+
+article h2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: Raleway, sans-serif;
+    color: var(--cor-titulo);
+}
+
+.front-end, .historia, .localizacao {
+    text-align: center;
+}
+
+article p {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+
+}
+
+abbr {
+    text-decoration: none;
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+
+/* Enunciados
+    
+1) Crie uma regra para formatar o artigo de História da Internet com:
+- Plano de fundo: imagem "fundo-madeira"
+- Deixe a imagem parada e cobrindo todo o espaço do artigo */
+.historia {
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+}
+
+/* 
+2) Crie uma regra para formatar o titulo "História da Internet" com cor clara e uma sombra no texto.*/
+
+.historia h2 {
+    color: var(--cor-clara);
+    text-shadow: var(--cor-escura) 0px 0px 10px;
+}
+
+/* 
+3) Crie uma regra para formatar o vídeo do artigo História da Internet com:
+- Largura de 100%
+- Largura máxima de 700px
+- Margem inferior de 2rem*/
+
+.historia iframe {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+/* 
+4) Crie uma regra para formatar o mapa da Localização com:
+- Largura de 100%
+- Margem superior de 2rem*/
+
+.localizacao iframe {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* 
+5) Crie uma classe chamada "limitador" com largura de 95vw e margem automática. 
+Aplique esta classe no cabeçalho e no artigo front-end.*/
+
+.limitador {
+    width: 95vw;
+    margin: auto;
+}
+
+/* 
+6) Crie uma regra para o rodapé com:
+- Fundo escuro
+- Cor do texto clara
+- Altura de 30vh
+- Negrito
+- Flex com centralização total
+- Texto centralizado */
+
+footer {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    height: 30vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
