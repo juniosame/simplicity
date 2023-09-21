@@ -61,6 +61,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 12vh;
 }
 
 /*  Regra da lista de links */
@@ -146,19 +147,37 @@ Destaque com as seguintes configurações::after
 elemento em cima do outro (ou seja, em modo coluna */
 
 .destaque {
-    height: 500px;
+    height: 88vh;
     background-image: url(../imagens/fundo-destaque.jpg);
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-size: cover;
 
 }
 
 /* 2) Crie uma regra CSS para formatar o h2 e o p contidos em Destaque. Faça com que os textos fiquem centralizados e com a cor clara */
 
-.destaque p {
+.destaque  {
     color: var(--cor-clara);
     text-align: center;
 }
+
+.destaque h2 {
+    /* Função clamp(
+        tamanho minimo,
+        tamanho ideal,
+        tamanho máximo) */
+    font-size: clamp(3rem, 10vw, 7rem);
+}
+
+.destaque p {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+/* .historia iframe {
+    width: clamp(26rem, 10vw, 50rem);
+    height: clamp(26rem, 10vh, 50rem);
+} */
