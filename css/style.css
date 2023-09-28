@@ -58,10 +58,9 @@ h1 a {
 a { text-decoration: none; }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 12vh;
+    position: sticky;
+    top: 0;
+    background-color: var(--cor-clara);
 }
 
 /*  Regra da lista de links */
@@ -267,6 +266,15 @@ Aplique esta classe no cabeçalho e no artigo front-end.*/
 .limitador {
     width: 95vw;
     margin: auto;
+    
+}
+
+
+header .limitador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
 }
 
 /* 
@@ -287,4 +295,69 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+
+/* Regras para as páginas Produtos, Serviços e Contato */
+
+.conteudo {
+    background-color: var(--cor-intermediaria);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.conteudo h2 {
+    padding: 0;
+    font-size: 1.8rem;
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+
+
+
+/* Exercícios: regras condicionais (Media Queries) */
+
+/* 1) Crie uma regra condicional para telas a partir de 570px com as seguintes alterações
+
+- Esconder a palavra Menu
+- Habilitar o flex para a classe "menu"
+- Definir largura de 100% para os itens dentro do "menu"
+- Definir largura de 70% para o nav
+- Reduzir para 200px a altura da imagem contida no artigo Front-End*/
+
+@media screen and (min-width: 570px) {
+    nav h2 {display: none}
+
+    .menu {
+        display: flex;
+        
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    nav {
+        width: 70%;
+    }
+
+    .front-end img {
+        height: 150px;
+    }
+}
+
+/* 2) Crie uma regra condicional para telas a partir de 900px com as seguimtes alterações:
+- Aumentar o tamanho geral de todos os textos para 18px
+- Definir o tamanho máximo da classe limitador para 1000px*/
+
+
+@media screen and (min-width: 900px) {
+    html { font-size: 18px;}
+   .limitador { max-width: 1000px;}
 }
