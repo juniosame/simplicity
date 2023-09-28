@@ -313,6 +313,44 @@ footer {
     margin-bottom: 1rem;
 }
 
+table {
+    width: 80%;
+    margin: auto;
+}
+
+table, th, td {
+    border: solid 2px;
+    border-collapse: collapse; /* Remove o espaço entre as bordas */
+}
+
+
+caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+}
+
+th {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    border-color: var(--cor-escura);
+    padding: 0.7rem;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+th:first-child { text-align: left; }
+
+td:nth-child(2) { text-align: center;}
+
+th:last-child, td:last-child { text-align: right;}
+
+tr:nth-child(odd) {
+    background-color: var(--cor-clara);
+}
 
 /* ------------------------------------------------------------------- */
 
