@@ -6,19 +6,17 @@
 
 <!-- Tópicos -->
 <p align="center">
-  <a href="#overview">Visão Geral</a> •
+  <a href="#visão-geral">Visão Geral</a> •
   <a href="#estilo-e-formatação">Estilo e Formatação</a> •
   <a href="#páginas-de-conteúdo">Páginas de Conteúdo</a> •
   <a href="#regras-condicionais-media-queries">Regras Condicionais (Media Queries)</a>
 </p>
 
-<!-- Visão Geral -->
-## 📜 Visão Geral
+## Visão Geral 📜
 
 Simplicity é um projeto fictício desenvolvido para fins educacionais. Demonstramos conceitos de desenvolvimento web utilizando HTML, CSS e JavaScript para criar um site moderno e elegante.
 
-<!-- Estilo e Formatação -->
-## 🎨 Estilo e Formatação
+## Estilo e Formatação 🎨
 
 - **Reinicialização de Estilos**: Aplicamos uma reinicialização de estilos para estabelecer uma base consistente.
 - **Variáveis CSS**: Utilizamos variáveis CSS para gerenciar cores e valores reutilizáveis em todo o site.
@@ -35,26 +33,20 @@ Simplicity é um projeto fictício desenvolvido para fins educacionais. Demonstr
 - **Classe "limitador"**: A classe "limitador" é usada para controlar a largura e o alinhamento de elementos em várias partes do site.
 - **Estilo do Rodapé**: O rodapé tem um fundo escuro, texto claro e informações de direitos autorais.
 
-<!-- Páginas de Conteúdo -->
-## 📚 Páginas de Conteúdo
+## Páginas de Conteúdo 📚
 
 - **Conteúdo de Produtos**: A página de produtos fornece informações detalhadas sobre os produtos oferecidos, incluindo tempo de entrega e custo aproximado.
 - **Conteúdo de Serviços**: A página de serviços descreve detalhadamente os serviços oferecidos pela empresa, destacando as áreas de especialização.
 
-<!-- Linguagens Utilizadas -->
-## 🚀 Linguagens Utilizadas
+## Linguagens Utilizadas 🚀
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="30" height="30"> **HTML5**: Responsável pela estruturação do conteúdo.
   
-
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="30" height="30"> **CSS3**: Responsável pelo estilo visual do site.
   
-
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="30" height="30"> **JavaScript**: Responsável pelo comportamento interativo e dinâmico.
-  
 
-<!-- Regras Condicionais (Media Queries) -->
-## 📱 Regras Condicionais (Media Queries)
+## Regras Condicionais (Media Queries) 📱
 
 Utilizamos regras condicionais (media queries) para tornar o site responsivo e adaptável a diferentes tamanhos de tela. As regras condicionais ajustam o layout e os estilos em dispositivos móveis e desktop, garantindo uma experiência do usuário consistente em todas as plataformas.
 
