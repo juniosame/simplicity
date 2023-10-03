@@ -60,6 +60,7 @@ a { text-decoration: none; }
 header {
     position: sticky;
     top: 0;
+    z-index: 100;
     background-color: var(--cor-clara);
 }
 
@@ -352,6 +353,36 @@ tr:nth-child(odd) {
     background-color: var(--cor-clara);
 }
 
+
+
+  /*  Paseudo-elemento ::before (::after) */
+td:last-child { position: relative;}
+
+  td:last-child::before {
+    content: 'R$ ';
+    position: absolute;
+    left: 150px;
+
+}
+
+/* ------------------------------------------------------------------- */
+
+.boximg {
+    text-align: center;
+
+}
+
+.boximg img {
+    border-radius: 100%; 
+    transition: 1s;
+    transform: scale(0.9);
+}
+
+/* Aplicamos o :hover e o :focus ao seletor de tag "a" em vez de aplicar no "img". Desta forma, o acionamento funcionará tanto com mouse quanto com teclado. */
+.boximg a:hover img, a:focus img {
+    border-radius: 8%;
+    transform: scale(1);
+}
 /* ------------------------------------------------------------------- */
 
 
