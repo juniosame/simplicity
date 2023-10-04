@@ -301,13 +301,13 @@ footer {
 
 /* Regras para as páginas Produtos, Serviços e Contato */
 
-.conteudo {
+.conteudo, .servicos, .contato {
     background-color: var(--cor-intermediaria);
     padding: 0.5rem;
     border-radius: 8px;
 }
 
-.conteudo h2 {
+.conteudo h2, .servicos h2 {
     padding: 0;
     font-size: 1.8rem;
     border-bottom: solid 1px;
@@ -366,6 +366,9 @@ td:last-child { position: relative;}
 }
 
 /* ------------------------------------------------------------------- */
+.conteudo h2::before { content: "🛒 ";}
+.servicos h2::before { content: "🛠️ ";}
+.contato h2::before { content: "📧 ";}
 
 .boximg {
     text-align: center;

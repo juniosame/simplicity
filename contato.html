@@ -41,7 +41,7 @@
                 <div>
                     <!-- Nome -->
                     <label for="nome">Nome: </label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" required placeholder="Nome Completo">
                 </div>
 
                 <div><!-- e-mail -->
@@ -61,7 +61,24 @@
                 </div>
 
                 <!-- assunto -->
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto" required>
+                        <option,0></option,0>
+                        <option>Dúvidas</option>
+                        <option>Elogios</option>
+                        <option>Reclamações</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+
                 <!-- mensagem -->
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit">Emviar Dados</button>
 
             </form>
 
