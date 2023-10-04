@@ -391,7 +391,6 @@ td:last-child { position: relative;}
  form {
     max-width: 500px;
     margin: auto;
-    background-color: lightblue;
  }
 
  input, select, textarea {
@@ -410,7 +409,31 @@ td:last-child { position: relative;}
     margin-top: 1rem;
  }
 
+ label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 30%;
+ }
 
+
+ /* Pseudo-classe :not Permite criar exceções parauma regra. Nesete exemplo, estamos aplicando 70% de largura para tudo (*) dentro do "form div" EXCETO o "label". */
+ form div *:not(label) { width: 70%; }
+
+button {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    border: none;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover, button:focus {
+    background-color: var(--cor-clara);
+    color: var(--cor-escura);
+    box-shadow: var(--cor-escura) 0 0 2px;
+}
 /* ------------------------------------------------------------------- */
 /* Exercícios: regras condicionais (Media Queries) */
 
