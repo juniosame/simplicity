@@ -11,3 +11,9 @@ console.log(menu);
 // Selecionando o link que está dentro do nav h2
 const textoBotao = botaoMenu.querySelector("a")
 console.log(textoBotao);
+
+botaoMenu.addEventListener("click", function(event){
+
+    event.preventDefault(); //Anular/prevenir o comportamento do link
+    menu.classList.toggle("aberto");
+})
