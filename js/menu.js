@@ -16,4 +16,11 @@ botaoMenu.addEventListener("click", function(event){
 
     event.preventDefault(); //Anular/prevenir o comportamento do link
     menu.classList.toggle("aberto");
-})
+
+    if(menu.classList.contains("aberto")){
+        textoBotao.innerHTML = "Fechar &times;"
+    } else {
+
+        textoBotao.innerHTML = "Menu &equiv;"
+    }
+});

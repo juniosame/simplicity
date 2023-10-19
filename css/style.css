@@ -434,6 +434,16 @@ button:hover, button:focus {
     color: var(--cor-escura);
     box-shadow: var(--cor-escura) 0 0 2px;
 }
+
+
+#cep {
+    width: 60%;
+}
+
+#buscar {
+    width: 37%;
+    padding: 12px;
+}
 /* ------------------------------------------------------------------- */
 /* Exercícios: regras condicionais (Media Queries) */
 
