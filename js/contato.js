@@ -9,6 +9,20 @@ const campoCidade = formulario.querySelector("#cidade");
 const campoEstado = formulario.querySelector("#estado");
 const botaoBuscar = formulario.querySelector("#buscar");
 const mensagem = formulario.querySelector("#status");
+const bmostrar = document.querySelectorAll(".mostrar");
+
+// Seleção do campo telefone usando JS Puro
+//const campoTelefone = formulario.querySelector("#telefone");
+
+// Seleção do campo telefone usando JS Puro
+const campoTelefone = $("#tel");
+
+// Ativando a máscara para o telefone
+$(campoTelefone).mask("(00) 0000-0000"); // Exemplo: (11) 2135-0300
+
+// Ativando a máscara para o Cep
+$(campoCep).mask("00000-000"); // Exemplo: 02201-002
+
 
 // Detectando o evento de CLICK no botão buscar
 botaoBuscar.addEventListener("click", async function(event){
@@ -18,7 +32,7 @@ botaoBuscar.addEventListener("click", async function(event){
 
     /* Verficando se o cep NÃo tem 8 dígitos
     O operador !== significa "diferente de". */
-    if(campoCep.value.length !==8){
+    if(campoCep.value.length !== 9){
         mensagem.textContent = "CEP Inválido!";
         mensagem.style.color = "red";
         
@@ -29,6 +43,10 @@ botaoBuscar.addEventListener("click", async function(event){
         cep = campoCep.value;
     }
 
+    // Mostra os campos apos o cep valido ser digitado
+    for(const mostrar of bmostrar){
+        mostrar.classList.remove("mostrar");
+    }
 
     /* AJAX -> Técnica de comunicação assícrona para acessar uma API (www.viacep.com.br) */
 

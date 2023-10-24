@@ -448,6 +448,9 @@ button:hover, button:focus {
 #status {
     font-size: 12px;
 }
+
+.mostrar { display: none; }
+
 /* ------------------------------------------------------------------- */
 /* Exercícios: regras condicionais (Media Queries) */
 
