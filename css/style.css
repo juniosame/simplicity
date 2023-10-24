@@ -444,6 +444,10 @@ button:hover, button:focus {
     width: 37%;
     padding: 12px;
 }
+
+#status {
+    font-size: 12px;
+}
 /* ------------------------------------------------------------------- */
 /* Exercícios: regras condicionais (Media Queries) */
 
