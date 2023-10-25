@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços - Simplicity</title>
+    <!-- Importando o CSS do Plugin Lightbox -->
+    <link href="lightbox/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -36,18 +38,18 @@
             <figure class="boximg">
 
 
-                <a href="imagens/desenvolvimento-web.jpg"><img src="imagens/desenvolvimento-web-mini.jpg" alt="web design"></a>
+                <a href="imagens/desenvolvimento-web.jpg" data-title="Desenvolvimento de sites" data-lightbox="fotos"><img src="imagens/desenvolvimento-web-mini.jpg" alt="web design"></a>
 
 
-                <a href="imagens/design-grafico.jpg"><img src="imagens/design-grafico-mini.jpg" alt="web design"></a>
-
-
-
-                <a href="imagens/marketing-digital.jpg"><img src="imagens/marketing-digital-mini.jpg" alt="web design"></a>
+                <a href="imagens/design-grafico.jpg" data-title="Design Gráfico impactante" data-lightbox="fotos"><img src="imagens/design-grafico-mini.jpg" alt="web design"></a>
 
 
 
-                <a href="imagens/consultoria-treinamento.jpg"><img src="imagens/consultoria-treinamento-mini.jpg" alt="web design"></a>
+                <a href="imagens/marketing-digital.jpg" data-title="Venda e convença" data-lightbox="fotos"><img src="imagens/marketing-digital-mini.jpg" alt="web design"></a>
+
+
+
+                <a href="imagens/consultoria-treinamento.jpg" data-title="Prepare-se para o mercado" data-lightbox="fotos"><img src="imagens/consultoria-treinamento-mini.jpg" alt="web design"></a>
 
             </figure>
 
@@ -65,7 +67,16 @@
             <b>Senac Penha</b> - <time>2023</time>
         </p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="lightbox/js/lightbox.min.js"></script>
 
+    <script>
+        lightbox.option({
+            albumLabel: "Foto %1 de %2"
+        })
+    </script>
+    
     <script src="js/menu.js"></script>
 
 
